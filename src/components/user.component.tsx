@@ -21,7 +21,7 @@ const userElem = (props: IProps | any) => {
                  <div className="mr-2">
                  <a href={props.user.html_url} target="_blank">{props.user.name}</a>
                  </div>
-                 <span className="badge badge-pill badge-success mr-2">star : {props.user.stargazers_count}</span>
+                 <span className="badge badge-pill badge-success mr-2"><i className="fa fa-star" aria-hidden="true"></i> {props.user.stargazers_count}</span>
     <span className="badge badge-pill badge-primary"><i className="fa fa-code-fork" aria-hidden="true"></i> &nbsp; {props.user.forks_count}</span>
             </div>   
        </div>
