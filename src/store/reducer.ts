@@ -17,6 +17,11 @@ const initialState: IAppState  = {
 
 const reducer = (state: IAppState = initialState, action: any) => {
     switch (action.type) {
+        case actionTypes.FETCH_USERLIST:
+          return {
+            ...state,
+            loading: true
+          }
         case actionTypes.FETCH_USERLIST_SUCCESS:
           return {
             ...state,
