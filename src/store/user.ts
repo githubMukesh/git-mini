@@ -21,30 +21,4 @@ export const fetchUsersFail = (error: string) => {
 }
 
 
-export const GetUsers = () => {
-    console.log("GetUsers");
-
-    return (dispatch: any) => {
-        console.log("GetUsers dispatch");
-
-        fetch(`https://reqres.in/api/users`)
-        .then((resp) => resp.json())
-        .then(res => {
-            const users = res.data;
-
-            dispatch({
-                type: actionTypes.FETCH_USERLIST_SUCCESS,
-                users
-            });
-        }).catch((err) => {
-            console.log(err);
-            dispatch({
-                type: actionTypes.FETCH_USERLIST_FAIL,
-                users: [],
-                error: err
-            });
-        })
-    };
-};
-
 
