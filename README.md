@@ -1,6 +1,10 @@
 # GIT MINI
+It's an application to show the public Github repositories of a user. Search the reposiotory by user name and it will list down the repository associated with that user.
 
-1) 
+tech stack:
+ 1) React 17
+ 2) Jest and enzyme for testing
+ 3) redux with thunk for state management
 
 ## TO Run the application
 ### install dependency
@@ -16,8 +20,7 @@
 ###Note :
 
 1) Followed YAGNI while writing this code
-2) Could not do TDD because of time crunch but tried where ever it was possible and important
-3) Tried to code in a way that this can be extensible
+2) Tried to follow the hooks method wherever it was needed.
 
 
 
