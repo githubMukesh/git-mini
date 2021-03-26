@@ -1,0 +1,23 @@
+img {
+    max-height: 200px;
+    max-width: 200px;
+}
+img:hover {
+  transform: scaleX(-1);
+}
+
+.card{
+    border-top: 4px solid red;
+    margin-top: 1rem;
+    width: 50rem;
+    max-width: 50rem;
+}
+
+.repo-name {
+    margin:10px;
+    width:200px;
+    max-width:200px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    font-size: 1.2em;
+}

@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Search from './components/search';
+import Search from './components/search.component';
+import UserList from './components/userList.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App container-app">
        <Search></Search>
-      </header>
+       <UserList></UserList>
     </div>
   );
 }
