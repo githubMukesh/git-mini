@@ -4,10 +4,7 @@ export interface IProps {
     user: any;
 }
 const userElem = (props: IProps | any) => {
- 
     const openProfile = (link) => { window.open(link, '_blank'); };
-
-
     return (
 <div className="card">
   <div className="card-body">

@@ -5,12 +5,12 @@ import { Provider } from "react-redux"
 import './index.css';
 import App from './App';
 import {IAppState} from './store/reducer';
-import reducerr from './store/reducer';
+import reducer from './store/reducer';
 import reportWebVitals from './reportWebVitals';
 import thunk from "redux-thunk"
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-const store: Store<IAppState>  = createStore(reducerr,  composeWithDevTools(applyMiddleware(thunk)))
+const store: Store<IAppState>  = createStore(reducer,  composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <React.StrictMode>
